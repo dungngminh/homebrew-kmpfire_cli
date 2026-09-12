@@ -6,13 +6,13 @@
 class Kmpfire < Formula
   desc "CLI to configure Firebase for Kotlin Multiplatform / Compose Multiplatform"
   homepage "https://github.com/dungngminh/kmpfire_cli"
-  version "0.1.0"
+  version "0.2.0"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/dungngminh/kmpfire_cli/releases/download/v0.1.0/kmpfire-macos-arm64.tar.gz"
-      sha256 "2c09067b60b1c1e897c7c0383b29e49db4bfc7220c602ccf1f59b81ed982c9d2"
+      url "https://github.com/dungngminh/kmpfire_cli/releases/download/v0.2.0/kmpfire-macos-arm64.tar.gz"
+      sha256 "57d6b123382c9cb7c956e18c911f506a06a54aa1520291f11b9ec7fb3e0ef28f"
 
       def install
         bin.install "kmpfire-macos-arm64" => "kmpfire"
@@ -20,8 +20,8 @@ class Kmpfire < Formula
     end
 
     on_intel do
-      url "https://github.com/dungngminh/kmpfire_cli/releases/download/v0.1.0/kmpfire-macos-x64.tar.gz"
-      sha256 "0cd882c6d3fe4e3fb12c328ab334141f9ada53d11a9f35312e49451146dd6252"
+      url "https://github.com/dungngminh/kmpfire_cli/releases/download/v0.2.0/kmpfire-macos-x64.tar.gz"
+      sha256 "b83fd9d0ac3a6c7ae8aa8e77e53f0fd227d38fb10b9775005948b582e4a6d052"
 
       def install
         bin.install "kmpfire-macos-x64" => "kmpfire"
@@ -32,8 +32,8 @@ class Kmpfire < Formula
   on_linux do
     depends_on arch: :x86_64
 
-    url "https://github.com/dungngminh/kmpfire_cli/releases/download/v0.1.0/kmpfire-linux-x64.tar.gz"
-    sha256 "13037db94efbe5509662341c30c02263478aec5b49b1e35d01b42adb60509070"
+    url "https://github.com/dungngminh/kmpfire_cli/releases/download/v0.2.0/kmpfire-linux-x64.tar.gz"
+    sha256 "75bd35c915e86df21dc9b0ab10cca645c90e1359dd9cef462f8f889037d3568b"
 
     def install
       bin.install "kmpfire-linux-x64" => "kmpfire"
